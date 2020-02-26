@@ -1,0 +1,161 @@
+/* CSS Document */
+
+.swiper-pager div {
+	position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 42px;
+    height: 105px;
+    z-index: 10;
+    cursor: pointer;
+     background-color: #A87C4C;
+    -moz-background-size: 20px;
+    -webkit-background-size: 20px;
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+	border-radius:50px;
+	-webkit-border-radius:50px;
+	-khtml-border-radius:50px;
+	-moz-border-radius:50px;
+
+
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+.swiper-viewport .swiper-pager {
+	width: 100%;
+    position: absolute;
+    top: 46%;
+}
+
+
+.swiper-pager .swiper-button-prev {
+	left:-20px;
+	background-image: url("../img/slider-prev.svg");
+    -webkit-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+}
+
+
+.swiper-pager .swiper-button-prev:hover{
+	 background-color: #000000;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+.swiper-pager .swiper-button-next{
+	right:-20px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow:1px 1px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+	background-image: url("../img/slider-next.svg");
+	transition: all 500ms ease;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+}
+
+.swiper-pager .swiper-button-next:hover{
+	 background-color: #000000;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+
+.swiper-viewport {
+	margin: 0 0 60px;
+	background: #fff;
+	z-index: 1;
+	border: 4px solid #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	width: 100%;
+	position: relative;
+	overflow: visible;
+}
+/* OpenCart Code */
+.swiper-container {
+	direction: ltr !important;
+}
+
+
+/* Desktop */
+
+
+/*.swiper-button-prev:before {
+    width: 40px;
+    height: 40px;
+    font-family: FontAwesome;
+    content: "\f104";
+    color: #ffffff;
+    font-size: 90px;
+}
+.swiper-button-prev:hover::before,
+.swiper-button-next:hover::before {
+    color: #bc8246;
+}
+.swiper-button-next:before {
+    width: 40px;
+    height: 40px;
+    font-family: FontAwesome;
+    content: "\f105";
+    color: #ffffff;
+    font-size: 90px;
+}*/
+.swiper-pagination {
+	bottom: -40px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background: #dddddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 1;
+	-webkit-opacity:1;
+	-moz-opacity: 1;
+	-ms-opacity: 1;
+	-o-opacity:1;
+
+}
+.swiper-pagination-bullet:hover {
+	background: #0083C1;
+}
+.swiper-pagination-bullet-active {
+	background: #0083C1;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: auto;
+}
+@media (max-width: 1299px) {
+.swiper-viewport .swiper-pager {
+    top: 45%;
+}
+}
+@media (max-width: 979px) {
+.main-slider .swiper-pager div{display:none;}
+.main-slider .swiper-pagination {
+    display: block;
+}
+}
